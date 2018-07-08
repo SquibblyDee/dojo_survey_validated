@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px solid red; */
+}
+
+.container{
+    height: auto;
+    margin-top: 5%;
+    outline: 1px solid black;
+    padding-top: 5%;
+}
+
+.btn{
+    margin-left: 85%;
+    margin-bottom: 5%;
+    text-align: left;
+    box-shadow: 3px 3px black;
+}
+
+.btn-secondary{
+    margin-top: 10%;
+}
+
+p{
+    display:inline-block;
+    width: 45%;
+    vertical-align: top;
+}

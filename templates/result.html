@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
+        <!-- Linking Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- linking a javascript file -->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1><u>Submitted Info</u></h1>
+            <div class="data">
+                <p>Name:</p>
+                <p>{{ request.form['name'] }}</p>
+                <p>Dojo of Choice:</p> 
+                <p>{{ request.form['dojo'] }}</p>
+                <p>Favorite Language:</p>
+                <p>{{ request.form['language'] }}</p>
+                <p>Comment:</p>
+                <p>{{ request.form['comment'] }}</p>
+                <a href='/' class='btn btn-secondary'></button>Go Back</a>
+            </div>
+        </div>
+    </body>
+</html>
